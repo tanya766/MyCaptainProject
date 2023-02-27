@@ -1,0 +1,27 @@
+"""The Fibonacci numbers are the numbers in the following integer sequence.
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
+In mathematical terms, the sequence Fn of Fibonacci numbers is defined by the recurrence relation."""
+
+n = int(input("Enter a  number: "))
+#first two terms
+a = 0
+b = 1
+#loop variable
+i = 0
+
+#to check if the number is valid
+if n <= 0:
+    print("please enter a positive number")
+#if there is only one term  
+elif n == 1:
+    print("fibonacci sequence upto",n,":")
+    print(a)
+#printing the fibonacci sequence
+else: print("fibonacci sequence upto",n,":")
+while i < n:
+          print(a)
+          c = a + b
+#updation/changing of values
+          a = b
+          b = c
+          i += 1
